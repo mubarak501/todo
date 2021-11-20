@@ -1,3 +1,8 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +40,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+.task-content {
+  display: flex;
+  justify-content: center;
+}
+.contentTag {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #3f3160;
+  border-radius: 10px;
+  width: 50%;
+}
+.dataInputed {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.Input-Search {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
 }
