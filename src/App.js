@@ -9,8 +9,11 @@ function App(props) {
 
   let textInput = React.createRef();
   const handleClick = () => {
-    setFetch([...fetch, textInput.current.value]);
-    console.log(fetch);
+    if (textInput.current.value != "") {
+      setFetch([...fetch, textInput.current.value]);
+
+      console.log(fetch);
+    }
   };
   // const handleRemove = () => {
   //   setFetch([textInput.current.value]);
@@ -39,8 +42,10 @@ function App(props) {
             return (
               <div className="dataInputed">
                 {" "}
-                <Button onClick={() => handleRemoveItem(index)}>click</Button>
-                <p>{item}</p>
+                <Button id="btn-2" onClick={() => handleRemoveItem(index)}>
+                  Remove
+                </Button>
+                <p id="content-tag">{item}</p>
                 <Checkbox
                   defaultChecked
                   indeterminate

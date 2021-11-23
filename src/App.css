@@ -2,6 +2,9 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  background: #e8cbc0;
+  background: -webkit-linear-gradient(to right, #636fa4, #e8cbc0);
+  background: linear-gradient(to right, #636fa4, #e8cbc0);
 }
 .App {
   text-align: center;
@@ -55,12 +58,61 @@ body {
 }
 .dataInputed {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
+  margin-bottom: 20px;
+}
+#input-1 {
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 10px;
 }
 .Input-Search {
   display: flex;
   justify-content: center;
   flex-direction: row;
   padding: 10px;
+}
+#Btn-1 {
+  margin-left: 10px;
+}
+#btn-2 {
+  background-color: chocolate;
+  width: 80px;
+  height: 50px;
+  margin: 10px;
+  margin-top: 20px;
+}
+#content-tag {
+  width: 228px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 786px) {
+  .contentTag {
+    width: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .contentTag {
+    width: 80%;
+  }
+}
+@media (max-width: 414px) {
+  .contentTag {
+    width: 90%;
+  }
+  #input-1 {
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 10px;
+    padding: 15px;
+  }
 }
